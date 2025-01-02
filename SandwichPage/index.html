@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandwich Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sandwich Maker</h1>
+    <div class="container">
+        <div class="ingredients section">
+            <h2 style="flex: 100%;">Ingredients</h2>
+
+            <div class="meat items">
+                <div class="meat-figure figures">
+                    <div class="meatfig">
+                        <div class="meatline"></div>
+                        <div class="meatline1"></div>
+                        <div class="meatline2"></div>
+                        <div class="meatline3"></div>
+                        <div class="meatParticle"></div>
+                        <div class="meatParticle1"></div>
+                        <div class="meatParticle2"></div>
+                        <div class="meatParticle3"></div>
+                        <div class="meatParticle4"></div>
+                        <div class="meatParticle5"></div>
+                        <div class="meatParticle6"></div>
+                        <div class="meatParticle7"></div>
+                        <div class="meatParticle8"></div>
+                        <div class="meatParticle9"></div>
+
+                    </div>
+
+                </div>
+                <div class="addremove" id="meat">
+                    <h4>Meat</h4>
+                    <div class="buttons">
+                        <div class="button1 buttonn" onclick="addElement('meat')">+</div>
+                        <div class="button2 buttonn"  onclick="removes('meat')">-</div>
+                    </div>
+                </div>
+                <div class="price">
+                    <span style="font-size: 20px;">5</span><span style="font-size: 20px;">DH</span>
+                </div>
+            </div>
+            <div class="tomato items">
+                <div class="tomato-figure figures">
+                    <div class="tomatofig">
+                        <div class="tomatocircleA">
+                            <div class="tomatocircle1"></div>
+                            <div class="tomatocircle2"></div>
+                            <div class="tomatocircle3"></div>
+                            <div class="tomatocircle4"></div>
+                        </div>
+                        <div class="tomatocircleB">
+                            <div class="tomatocircle1"></div>
+                            <div class="tomatocircle2"></div>
+                            <div class="tomatocircle3"></div>
+                            <div class="tomatocircle4"></div>
+                        </div>
+                        <div class="tomatocircle5"></div>
+                        <div class="tomatoparticle"><div class="tomatoinsideparticle"></div></div>
+                        <div class="tomatoparticle1"><div class="tomatoinsideparticle"></div></div>
+                        <div class="tomatoparticle2"><div class="tomatoinsideparticle"></div></div>
+                        <div class="tomatoparticle3"><div class="tomatoinsideparticle"></div></div>
+                        <div class="tomatoparticle4"><div class="tomatoinsideparticle"></div></div>
+                        <div class="tomatoparticle5"><div class="tomatoinsideparticle"></div></div>
+                        <div class="tomatoparticle6"><div class="tomatoinsideparticle"></div></div>
+                        <div class="tomatoparticle7"><div class="tomatoinsideparticle"></div></div>
+                    </div>
+                    
+                </div>
+                <div class="addremove" id="meat">
+                    <h4>Tomato</h4>
+                    <div class="buttons">
+                        <div class="button1 buttonn " onclick="addElement('tomato')">+</div>
+                        <div class="button2 buttonn" onclick="removes('tomato')">-</div>
+                    </div>
+                </div>
+                <div class="price">
+                    <span style="font-size: 20px;">3</span><span style="font-size: 20px;">DH</span>
+                </div>
+            </div>
+            <div class="onion items">
+                <div class="Onion-figure figures">
+                    <div class="onionfig">
+                        <div class="onioncircle"></div>
+                    </div>
+                    <div class="onionfig1">
+                        <div class="onioncircle"></div>
+                    </div>
+                </div>
+                <div class="addremove" id="meat">
+                    <h4>Onion</h4>
+                    <div class="buttons">
+                        <div class="button1 buttonn" onclick="addElement('onion')">+</div>
+                        <div class="button2 buttonn" onclick="removes('onion')">-</div>
+                    </div>
+                </div>
+                <div class="price">
+                    <span style="font-size: 20px;">1</span><span style="font-size: 20px;">DH</span>
+                </div>
+            </div>
+            <div class="cheese items">
+                <div class="cheesefigure">
+                    <div class="cheese-figure figures">
+                        <div class="cheesefig">
+                            <div class="cheesecircle"></div>
+                            <div class="cheesecircle1"></div>
+                            <div class="cheesecircle2"></div>
+                            <div class="cheesecircle3"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="addremove" id="meat">
+                    <h4>Cheese</h4>
+                    <div class="buttons">
+                        <div class="button1 buttonn" onclick="addElement('cheese')">+</div>
+                        <div class="button2 buttonn" onclick="removes('cheese')">-</div>
+                    </div>
+                </div>
+                <div class="price">
+                    <span style="font-size: 20px;">2</span><span style="font-size: 20px;">DH</span>
+                </div>
+            </div>
+            <div class="cucumber items">
+                <div class="cucumber-figure figures">
+                    <div class="cucumberfig">
+                        <div class="cucumbercircleA">
+                            <div class="cucumbercircle1"></div>
+                            <div class="cucumbercircle2"></div>
+                            <div class="cucumbercircle3"></div>
+                            <div class="cucumbercircle4"></div>
+                        </div>
+                        <div class="cucumbercircleB">
+                            <div class="cucumbercircle1"></div>
+                            <div class="cucumbercircle2"></div>
+                            <div class="cucumbercircle3"></div>
+                            <div class="cucumbercircle4"></div>
+                        </div>
+                        <div class="cucumbercircleC">
+                            <div class="cucumbercircle1"></div>
+                            <div class="cucumbercircle2"></div>
+                            <div class="cucumbercircle3"></div>
+                            <div class="cucumbercircle4"></div>
+                        </div>
+                        <div class="cucumbercircle5"></div>
+                    </div>
+                    
+                </div>
+                <div class="addremove" id="meat">
+                    <h4>Cucumber</h4>
+                    <div class="buttons">
+                        <div class="button1 buttonn" onclick="addElement('cucumber')">+</div>
+                        <div class="button2 buttonn" onclick="removes('cucumber')">-</div>
+                    </div>
+                </div>
+                <div class="price">
+                    <span style="font-size: 20px;">3</span><span style="font-size: 20px;">DH</span>
+                </div>
+            </div>
+            <div class="Pork items">
+                <div class="meat-figure figures">
+                    <div class="meatfig porkfig">
+                        <img class="haram" src="images/haram1.png" alt="">
+                        <div class="porkline"></div>
+                        <div class="porkline1"></div>
+                        <div class="porkline2"></div>
+                        <div class="porkline3"></div>
+                        <div class="porkParticle"></div>
+                        <div class="porkParticle1"></div>
+                        <div class="porkParticle2"></div>
+                        <div class="porkParticle3"></div>
+                        <div class="porkParticle4"></div>
+                        <div class="porkParticle5"></div>
+                        <div class="porkParticle6"></div>
+                        <div class="porkParticle7"></div>
+                        <div class="porkParticle8"></div>
+                        <div class="porkParticle9"></div>
+
+                    </div>
+
+                </div>
+                <div class="addremove" id="meat">
+                    <h4>Pork</h4>
+                    <div class="buttons">
+                        <div class="button1 buttonn" onclick="addElement('pork')">+</div>
+                        <div class="button2 buttonn">-</div>
+                    </div>
+                </div>
+                <div class="price">
+                    <span style="font-size: 20px;">6</span><span style="font-size: 20px;">DH</span>
+                </div>
+            </div>
+
+
+            <!-- not yet added -->
+            <div class="meat items">
+                <div class="? figures"></div>
+                <div class="addremove" id="meat">
+                    <h4>Meat</h4>
+                    <div class="buttons">
+                        <div class="button1 buttonn">+</div>
+                        <div class="button2 buttonn">-</div>
+                    </div>
+                </div>
+            </div>
+            <div class="meat items">
+                <div class="? figures"></div>
+                <div class="addremove" id="meat">
+                    <h4>Meat</h4>
+                    <div class="buttons">
+                        <div class="button1 buttonn">+</div>
+                        <div class="button2 buttonn">-</div>
+                    </div>
+                </div>
+            </div>
+            <div class="meat items">
+                <div class="? figures"></div>
+                <div class="addremove" id="meat">
+                    <h4>Meat</h4>
+                    <div class="buttons">
+                        <div class="button1 buttonn">+</div>
+                        <div class="button2 buttonn">-</div>
+                    </div>
+                </div>
+            </div>
+            <div class="meat items">
+                <div class="? figures"></div>
+                <div class="addremove" id="meat">
+                    <h4>Meat</h4>
+                    <div class="buttons">
+                        <div class="button1 buttonn">+</div>
+                        <div class="button2 buttonn">-</div>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+        </div>
+        <div class="sandwich-area">
+            <h2 >Your Sandwich</h2>
+            <div class="sandwich" id="maa">
+                <div class="plate">
+                </div>
+                <div class="bread-up">
+                    <div class="bread-down-down"></div>
+                    <div class="grain">
+                        <div class="grains" style="transform: translate(20px,20px) rotateZ(50deg);"></div>
+                        <div class="grains" style="transform: translate(-40px,-20px) rotateZ(50deg);"></div>
+                        <div class="grains" style="transform: translate(-20px,20px) rotateZ(50deg);" ></div>
+                        <div class="grains"  style="transform: translate(-8px,30px) rotateZ(50deg);"></div>
+                        <div class="grains"  style="transform: translate(0,0) rotateZ(50deg);"> </div>
+                        <div class="grains"  style="transform: translate(35px,-70px) rotateZ(50deg);"> </div>
+                        <div class="grains"  style="transform: translate(4px,-90px) rotateZ(50deg);"> </div>
+                        <div class="grains"  style="transform: translate(-40px,-100px) rotateZ(50deg);"> </div>
+                        <div class="grains"  style="transform: translate(-20px,-60px) rotateZ(50deg);"> </div>
+                        <div class="grains"  style="transform: translate(40px,-20px) rotateZ(50deg);"> </div>
+                    </div>
+                </div>
+                    <!-- elements that will be added/removed-->   
+                <div class="onion-figure2 figures">
+                    <div class="onionfig2">
+                        <div class="onioncircle"></div>
+                    </div>
+                    <div class="onionfig12">
+                        <div class="onioncircle"></div>
+                    </div>
+                </div>
+                <div class="cheesefig3">
+                    <div class="cheese-figure2">
+                        <div class="cheesecircle222"></div>
+                        <div class="cheesecircle12"></div>
+                        <div class="cheesecircle22"></div>
+                        <div class="cheesecircle32"></div>
+                    </div>
+                </div>            
+                <div class="cucumber-figure2 figures">
+                    <div class="cucumberfig">
+                        <div class="cucumbercircleA">
+                            <div class="cucumbercircle1"></div>
+                            <div class="cucumbercircle2"></div>
+                            <div class="cucumbercircle3"></div>
+                            <div class="cucumbercircle4"></div>
+                        </div>
+                        <div class="cucumbercircleB">
+                            <div class="cucumbercircle1"></div>
+                            <div class="cucumbercircle2"></div>
+                            <div class="cucumbercircle3"></div>
+                            <div class="cucumbercircle4"></div>
+                        </div>
+                        <div class="cucumbercircleC">
+                            <div class="cucumbercircle1"></div>
+                            <div class="cucumbercircle2"></div>
+                            <div class="cucumbercircle3"></div>
+                            <div class="cucumbercircle4"></div>
+                        </div>
+                        <div class="cucumbercircle5"></div>
+                    </div>
+                    
+                </div>
+                <div class="meat-figure2 figures">
+                    <div class="meatfig">
+                        <div class="meatline"></div>
+                        <div class="meatline1"></div>
+                        <div class="meatline2"></div>
+                        <div class="meatline3"></div>
+                        <div class="meatParticle"></div>
+                        <div class="meatParticle1"></div>
+                        <div class="meatParticle2"></div>
+                        <div class="meatParticle3"></div>
+                        <div class="meatParticle4"></div>
+                        <div class="meatParticle5"></div>
+                        <div class="meatParticle6"></div>
+                        <div class="meatParticle7"></div>
+                        <div class="meatParticle8"></div>
+                        <div class="meatParticle9"></div>
+
+                    </div>
+
+                </div>
+                <div class="tomato-figure2 figures">
+                    <div class="tomatofig">
+                        <div class="tomatocircleA">
+                            <div class="tomatocircle1"></div>
+                            <div class="tomatocircle2"></div>
+                            <div class="tomatocircle3"></div>
+                            <div class="tomatocircle4"></div>
+                        </div>
+                        <div class="tomatocircleB">
+                            <div class="tomatocircle1"></div>
+                            <div class="tomatocircle2"></div>
+                            <div class="tomatocircle3"></div>
+                            <div class="tomatocircle4"></div>
+                        </div>
+                        <div class="tomatocircle5"></div>
+                        <div class="tomatoparticle"><div class="tomatoinsideparticle"></div></div>
+                        <div class="tomatoparticle1"><div class="tomatoinsideparticle"></div></div>
+                        <div class="tomatoparticle2"><div class="tomatoinsideparticle"></div></div>
+                        <div class="tomatoparticle3"><div class="tomatoinsideparticle"></div></div>
+                        <div class="tomatoparticle4"><div class="tomatoinsideparticle"></div></div>
+                        <div class="tomatoparticle5"><div class="tomatoinsideparticle"></div></div>
+                        <div class="tomatoparticle6"><div class="tomatoinsideparticle"></div></div>
+                        <div class="tomatoparticle7"><div class="tomatoinsideparticle"></div></div>
+                    </div>
+                    
+                </div>
+
+                <div class="bread-down">
+                    <div class="bread-down-up"></div>
+                    <div class="bread-down-down"></div>
+                    <div class="grains" style="transform: translate(20px,20px) rotateZ(50deg);"></div>
+                    <div class="grains" style="transform: translate(-40px,-20px) rotateZ(50deg);"></div>
+                    <div class="grains" style="transform: translate(-20px,20px) rotateZ(50deg);" ></div>
+                    <div class="grains"  style="transform: translate(-8px,30px) rotateZ(50deg);"></div>
+                    <div class="grains"  style="transform: translate(0,0) rotateZ(50deg);"> </div>
+                    <div class="grains"  style="transform: translate(40px,-20px) rotateZ(50deg);"> </div>
+
+                </div>
+                
+            </div>
+            <div class="buttons2">
+                <div class="clefin">
+                    <div class="finalize button3 buttonn" onclick="finalise()">Finalise Order</div>
+                    <div class="clear button3 buttonn" onclick="clearA()">Clear</div>
+                </div>
+                <div class="price"><span class="price1"> Price : 25MAD </span><br><span class="score"> Your Score : 30MAD </span> </div>
+
+            </div>
+            
+        </div>
+        
+    </div>
+  
+    
+<script src="script.js"></script>
+</body>
+</html>

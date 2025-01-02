@@ -1,0 +1,17 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.468),rgba(200, 170, 1, 0.118)),url(images/bg3.jpg);
+    background-size: cover;
+}
+
+#board{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.5),rgba(200, 170, 1, 0.325)),url(images/burgerbg2.webp);
+    border: 7px black double;
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    box-shadow: 10px 15px 50px;
+}
