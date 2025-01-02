@@ -204,7 +204,7 @@ function moveBird(e){
             let x=score;
             console.log(x);
            
-            window.location.href = `/SandwichMaker/SandwichPage/index.html?x=${encodeURIComponent(x)}`;
+            window.location.href = `https://yassinelamsaaf.github.io/SandwichMaker/SandwichPage/index.html?x=${encodeURIComponent(x)}`;
             
 
 
