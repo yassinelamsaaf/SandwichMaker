@@ -57,7 +57,14 @@ function finalise(){
     sandwichC.style.display = "block";
     sandwichC.className = "sandwich-area sandwich2";
     sandwichC.children[1].className = "sandwich ok";
-    sandwichC.children[2].children[0].style.display = "none";
+    sandwichC.children[2].children[0].children[0].style.display = "none";
+    sandwichC.children[2].children[0].className = "clefin restart";
+    sandwichC.children[2].children[0].children[1].innerHTML = "Restart";
+    const restart = sandwichC.children[2].children[0].children[1];
+    restart.addEventListener('click',()=>{
+        window.location.href = "/flappySandwich/index.html"
+    });
+
     sandwichC.children[2].children[1].className = "price pricecenter"
     win.play();
 
@@ -309,7 +316,9 @@ function removes(e){
         }
     }
     if(zIndex==2){
+
         clearA();
+
     }
     pricespan.innerHTML = `Price : ${price}MAD`;
     scorespan.innerHTML=`Your Score : ${score}MAD`;
