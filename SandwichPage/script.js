@@ -62,7 +62,7 @@ function finalise(){
     sandwichC.children[2].children[0].children[1].innerHTML = "Restart";
     const restart = sandwichC.children[2].children[0].children[1];
     restart.addEventListener('click',()=>{
-        window.location.href = "/flappySandwich/index.html"
+        window.location.href = "https://yassinelamsaaf.github.io/SandwichMaker/flappySandwich/index.html"
     });
 
     sandwichC.children[2].children[1].className = "price pricecenter"
