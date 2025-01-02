@@ -203,7 +203,9 @@ function moveBird(e){
         if(gameOver){
             let x=score;
             console.log(x);
-            window.location.href = `/SandwichPage/index.html?x=${encodeURIComponent(x)}`;
+           
+            window.location.href = `https://yassinelamsaaf.github.io/SandwichMaker/SandwichPage/index.html?x=${encodeURIComponent(x)}`;
+            
 
 
            bird.y = birdY;
