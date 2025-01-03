@@ -87,9 +87,9 @@ function update(){
     
     requestAnimationFrame(update);
     if(start == false ){
-        context.fillStyle ="white";
+        context.fillStyle ="white"; // text color 
         context.font ="45px sans-serif";
-        context.fillText("TAP SPACE/UP ",10,200)
+        context.fillText("TAP SPACE/UP ",10,200) // text position
         context.fillText(" KEY TO START",2,250)
 
     }
@@ -100,7 +100,7 @@ function update(){
         return;
     }
 
-    context.clearRect(0,0, board.width, board.height);
+    context.clearRect(0,0, board.width, board.height);//clearing the previous frame before updating the next one 
 
     //bird
     velocityY += gravity;
@@ -119,7 +119,7 @@ function update(){
         pipe.x += velocityX;
         context.drawImage(pipe.img,pipe.x,pipe.y,pipe.width,pipe.height);
 
-        if(!pipe.passed && bird.x > pipe.x + pipe.width){
+        if(!pipe.passed && bird.x > pipe.x + pipe.width){ //the bird passed the pipe
             pointSound.play();
             score +=2.5; //because there is two pipes every one is 50pts
             pipe.passed = true;

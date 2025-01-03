@@ -90,6 +90,7 @@ body{
     border-radius: 5px;
     position: relative;
     min-height: 611.53px;
+    max-height: 611.53;
     
     
 }
