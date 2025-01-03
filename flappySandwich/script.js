@@ -79,6 +79,7 @@ window.onload = function(){
     setInterval(placePipes , 1500) // every 1.5s 
 
     document.addEventListener("keydown", moveBird);
+    document.addEventListener("click", moveBird);
 
 }
 
@@ -191,7 +192,7 @@ function placePipes(){
 
 function moveBird(e){
 
-    if(e.code == "Space" || e.code == "ArrowUp" || e.code == "KeyX"){
+    if(e.type =="click" || e.type=="touchstart" || e.code == "Space" || e.code == "ArrowUp" || e.code == "KeyX"){
         if(bgm.paused){
           bgm.play();    
         }
