@@ -48,7 +48,10 @@ pricespan.innerHTML = `Price : ${price}MAD`;
 scorespan.innerHTML=`Your Score : ${score}MAD`;
 
 
+breadUp.style.visibility = "hidden";
+
 function finalise(){
+    breadUp.style.visibility = "visible";
 
     const sandwichC = finalise2.cloneNode(true);
     
@@ -65,6 +68,9 @@ function finalise(){
         window.location.href = "https://yassinelamsaaf.github.io/SandwichMaker/flappySandwich/index.html"
         
     });
+
+    
+    
 
     sandwichC.children[2].children[1].className = "price pricecenter"
     win.play();
@@ -125,7 +131,6 @@ function addElement(e){
         sandwich.appendChild(clone1);
         cheeseclass++;
         clone1.className = `cheesefig3 cheese${cheeseclass}`;
-        breadUp.style.display = "block";
         breadUp.style.transform = `translateY(${breadY*0.9}px) rotateX(80deg) rotateZ(180deg)`
         clone1.children[0].style.display = "block";
         clone1.children[0].style.transform =` translateY(${positionY}px) rotateX(75deg) rotateY(4deg) rotateZ(2deg) translateX(0px) translateZ(2px)`;
@@ -147,7 +152,6 @@ function addElement(e){
         breadY = breadY - 17;
         const clone2 = element.cloneNode(true);
         sandwich.appendChild(clone2);
-        breadUp.style.display = "block";
         breadUp.style.transform = `translateY(${breadY*0.9}px) rotateX(80deg) rotateZ(180deg)`
         clone2.style.display = "block";
         clone2.style.transform =` translateY(${positionY}px) rotateX(75deg)`;
@@ -171,7 +175,6 @@ function addElement(e){
         breadY = breadY - 17;
         const clone3 = element.cloneNode(true);
         sandwich.appendChild(clone3);
-        breadUp.style.display = "block";
         breadUp.style.transform = `translateY(${breadY*0.9}px) rotateX(80deg) rotateZ(180deg)`
         clone3.style.display = "block";
         clone3.style.transform =` translateY(${positionY}px) rotateX(75deg)`;
@@ -194,7 +197,6 @@ function addElement(e){
         breadY = breadY - 17;
         const clone4 = element.cloneNode(true);
         sandwich.appendChild(clone4);
-        breadUp.style.display = "block";
         breadUp.style.transform = `translateY(${breadY*0.9}px) rotateX(80deg) rotateZ(180deg)`
         clone4.style.display = "block";
         clone4.style.transform =` translateY(${positionY}px) rotateX(75deg)`;
@@ -217,7 +219,6 @@ function addElement(e){
         breadY = breadY - 17;
         const clone6 = element.cloneNode(true);
         sandwich.appendChild(clone6);
-        breadUp.style.display = "block";
         breadUp.style.transform = `translateY(${breadY*0.9}px) rotateX(80deg) rotateZ(180deg)`
         clone6.style.display = "block";
         clone6.style.transform =` translateY(${positionY}px) rotateX(75deg)`;

@@ -90,7 +90,7 @@ body{
     border-radius: 5px;
     position: relative;
     min-height: 611.53px;
-    max-height: 611.53;
+    max-height: 611.53px;
     
     
 }
@@ -129,6 +129,7 @@ body{
     justify-content: space-between;
     padding: 10px 0;
     position: relative;
+    max-height: 588.325px;
     
     
 }
