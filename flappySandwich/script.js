@@ -35,9 +35,9 @@ let topPipeImg;
 let bottomPipeImg;
 
 //gamephysics
-let velocityX = -0.5; //pipes moving left speed
+let velocityX = -2; //pipes moving left speed 0.5
 let velocityY = 0; //bird jump speed 
-let gravity = 0.03;
+let gravity = 0.75; //0.03
 
 let gameOver = false;
 let score = 0;
@@ -197,7 +197,7 @@ function moveBird(e){
         }
         wingSound.play();
         start = true;
-        velocityY = -2; //jumping speed
+        velocityY = -12; //jumping speed
 
         //reset the game 
         if(gameOver){
