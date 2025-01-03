@@ -123,6 +123,10 @@ function clearA(){
 }
 }
 function addElement(e){
+    if(breadY < -310){
+        finalise();
+        return ; 
+    }
     let element;
     if(e == 'cheese' && price + 2 <= score){
         element = cheese;
